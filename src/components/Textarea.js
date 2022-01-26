@@ -40,9 +40,9 @@ export default function Textarea(props) {
     
   return (
     <div>
-        <div className="container my-3">
-            <label htmlFor="exampleFormControlTextarea1" className="my-3 form-label"><h2>{props.title} - Enter text to analyze</h2></label>
-            <textarea className="form-control" onChange={onchangetext} value={text} id="exampleFormControlTextarea1" rows="7"></textarea>
+        <div className="container my-3" >
+            <label htmlFor="exampleFormControlTextarea1" style={{color : props.mode==="light"?"black":"#5faefd"}} className="my-3 form-label"><h2>{props.title} - Enter text to analyze</h2></label>
+            <textarea className="form-control" onChange={onchangetext} style={{backgroundColor : props.mode==="light"?"aliceblue":"#4e5154", color: props.mode==="light"?"black":"white"}} value={text} id="exampleFormControlTextarea1" rows="7"></textarea>
         <button disabled={text.length===0} className="my-2 mx-1 btn btn-primary" onClick={handleUpclick}>{state}</button>
         <button disabled={text.length===0} className="my-2 mx-1 btn btn-primary" onClick={handleclear}>Clear</button>
         <button disabled={text.length===0} className="my-2 mx-1 btn btn-primary" onClick={handlecopy}>Copy</button>
