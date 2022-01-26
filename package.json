@@ -1,6 +1,6 @@
 {
-  "homepage": "https://bhavsarkunal.github.io/textutils",
   "name": "textutils",
+  "homepage": "https://bhavsarkunal.github.io/textutils",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

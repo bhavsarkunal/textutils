@@ -43,9 +43,9 @@ export default function Textarea(props) {
         <div className="container my-3">
             <label htmlFor="exampleFormControlTextarea1" className="my-3 form-label"><h2>{props.title} - Enter text to analyze</h2></label>
             <textarea className="form-control" onChange={onchangetext} value={text} id="exampleFormControlTextarea1" rows="7"></textarea>
-        <button className="my-2 mx-1 btn btn-primary" onClick={handleUpclick}>{state}</button>
-        <button className="my-2 mx-1 btn btn-primary" onClick={handleclear}>Clear</button>
-        <button className="my-2 mx-1 btn btn-primary" onClick={handlecopy}>Copy</button>
+        <button disabled={text.length===0} className="my-2 mx-1 btn btn-primary" onClick={handleUpclick}>{state}</button>
+        <button disabled={text.length===0} className="my-2 mx-1 btn btn-primary" onClick={handleclear}>Clear</button>
+        <button disabled={text.length===0} className="my-2 mx-1 btn btn-primary" onClick={handlecopy}>Copy</button>
 
         </div>
     </div>
